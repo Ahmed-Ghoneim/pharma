@@ -1,0 +1,23 @@
+apply plugin: 'java'
+apply plugin: 'javafx-gradle-plugin'
+
+
+jfx {
+    // minimal requirement for jfxJar-task
+    mainClass = 'pharmacymanagementsystem.PharmacyManagementSystem'
+
+    // minimal requirement for jfxNative-task
+    vendor = 'Ahmed'
+}
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+    //maven { url 'https://jitpack.io' }
+}
+
+dependencies {
+    compile 'org.xerial:sqlite-jdbc:3.19.3'
+    compile 'org.controlsfx:controlsfx:8.40.12'
+    //compile 'com.github.PlusHaze:TrayNotification:master-SNAPSHOT'
+}
